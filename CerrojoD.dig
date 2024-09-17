@@ -40,6 +40,10 @@
           <string>Label</string>
           <string>CLK</string>
         </entry>
+        <entry>
+          <string>InDefault</string>
+          <value v="1" z="false"/>
+        </entry>
       </elementAttributes>
       <pos x="200" y="400"/>
     </visualElement>

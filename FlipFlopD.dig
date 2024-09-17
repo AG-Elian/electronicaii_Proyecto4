@@ -36,7 +36,7 @@
     <visualElement>
       <elementName>Not</elementName>
       <elementAttributes/>
-      <pos x="300" y="340"/>
+      <pos x="280" y="240"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -51,10 +51,6 @@
   </visualElements>
   <wires>
     <wire>
-      <p1 x="220" y="240"/>
-      <p2 x="400" y="240"/>
-    </wire>
-    <wire>
       <p1 x="360" y="320"/>
       <p2 x="400" y="320"/>
     </wire>
@@ -63,16 +59,20 @@
       <p2 x="560" y="320"/>
     </wire>
     <wire>
+      <p1 x="320" y="240"/>
+      <p2 x="400" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="240"/>
+      <p2 x="280" y="240"/>
+    </wire>
+    <wire>
       <p1 x="140" y="340"/>
       <p2 x="220" y="340"/>
     </wire>
     <wire>
-      <p1 x="340" y="340"/>
-      <p2 x="400" y="340"/>
-    </wire>
-    <wire>
       <p1 x="220" y="340"/>
-      <p2 x="300" y="340"/>
+      <p2 x="400" y="340"/>
     </wire>
     <wire>
       <p1 x="360" y="280"/>
