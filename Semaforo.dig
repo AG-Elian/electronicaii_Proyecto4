@@ -37,12 +37,12 @@
       <elementName>Clock</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>CLK</string>
-        </entry>
-        <entry>
           <string>runRealTime</string>
           <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>CLK</string>
         </entry>
       </elementAttributes>
       <pos x="-280" y="60"/>
@@ -111,10 +111,6 @@
       <elementName>LED</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>LP1</string>
-        </entry>
-        <entry>
           <string>Color</string>
           <awt-color>
             <red>255</red>
@@ -123,16 +119,16 @@
             <alpha>255</alpha>
           </awt-color>
         </entry>
+        <entry>
+          <string>Label</string>
+          <string>LP1</string>
+        </entry>
       </elementAttributes>
       <pos x="960" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>LED</elementName>
       <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>LP0</string>
-        </entry>
         <entry>
           <string>Color</string>
           <awt-color>
@@ -141,6 +137,10 @@
             <blue>0</blue>
             <alpha>255</alpha>
           </awt-color>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>LP0</string>
         </entry>
       </elementAttributes>
       <pos x="960" y="200"/>
@@ -160,7 +160,7 @@
       <elementAttributes>
         <entry>
           <string>Color</string>
-          <awt-color reference="../../../../visualElement[11]/elementAttributes/entry[2]/awt-color"/>
+          <awt-color reference="../../../../visualElement[11]/elementAttributes/entry/awt-color"/>
         </entry>
         <entry>
           <string>Label</string>
@@ -174,7 +174,7 @@
       <elementAttributes>
         <entry>
           <string>Color</string>
-          <awt-color reference="../../../../visualElement[12]/elementAttributes/entry[2]/awt-color"/>
+          <awt-color reference="../../../../visualElement[12]/elementAttributes/entry/awt-color"/>
         </entry>
         <entry>
           <string>Label</string>
@@ -182,6 +182,56 @@
         </entry>
       </elementAttributes>
       <pos x="960" y="420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Not</elementName>
+      <elementAttributes/>
+      <pos x="520" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="640" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="640" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Not</elementName>
+      <elementAttributes/>
+      <pos x="520" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="640" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="640" y="440"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -192,6 +242,14 @@
     <wire>
       <p1 x="140" y="320"/>
       <p2 x="240" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="160"/>
+      <p2 x="640" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="480"/>
+      <p2 x="640" y="480"/>
     </wire>
     <wire>
       <p1 x="300" y="100"/>
@@ -206,8 +264,28 @@
       <p2 x="20" y="100"/>
     </wire>
     <wire>
+      <p1 x="560" y="260"/>
+      <p2 x="600" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="260"/>
+      <p2 x="520" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="260"/>
+      <p2 x="640" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="880" y="420"/>
+      <p2 x="960" y="420"/>
+    </wire>
+    <wire>
       <p1 x="-160" y="200"/>
       <p2 x="-40" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="200"/>
+      <p2 x="960" y="200"/>
     </wire>
     <wire>
       <p1 x="-40" y="200"/>
@@ -218,6 +296,10 @@
       <p2 x="-80" y="360"/>
     </wire>
     <wire>
+      <p1 x="720" y="360"/>
+      <p2 x="960" y="360"/>
+    </wire>
+    <wire>
       <p1 x="300" y="300"/>
       <p2 x="360" y="300"/>
     </wire>
@@ -226,16 +308,36 @@
       <p2 x="60" y="300"/>
     </wire>
     <wire>
+      <p1 x="580" y="300"/>
+      <p2 x="960" y="300"/>
+    </wire>
+    <wire>
       <p1 x="-40" y="140"/>
       <p2 x="20" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="140"/>
+      <p2 x="960" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="460"/>
+      <p2 x="880" y="460"/>
     </wire>
     <wire>
       <p1 x="220" y="80"/>
       <p2 x="240" y="80"/>
     </wire>
     <wire>
+      <p1 x="360" y="80"/>
+      <p2 x="960" y="80"/>
+    </wire>
+    <wire>
       <p1 x="-280" y="400"/>
       <p2 x="-80" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="240"/>
+      <p2 x="740" y="240"/>
     </wire>
     <wire>
       <p1 x="-40" y="20"/>
@@ -246,8 +348,28 @@
       <p2 x="60" y="340"/>
     </wire>
     <wire>
+      <p1 x="420" y="340"/>
+      <p2 x="640" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="560" y="120"/>
+      <p2 x="580" y="120"/>
+    </wire>
+    <wire>
       <p1 x="100" y="120"/>
       <p2 x="240" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="120"/>
+      <p2 x="420" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="120"/>
+      <p2 x="520" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="580" y="120"/>
+      <p2 x="640" y="120"/>
     </wire>
     <wire>
       <p1 x="220" y="280"/>
@@ -258,16 +380,52 @@
       <p2 x="-80" y="280"/>
     </wire>
     <wire>
+      <p1 x="420" y="440"/>
+      <p2 x="640" y="440"/>
+    </wire>
+    <wire>
       <p1 x="0" y="380"/>
       <p2 x="20" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="380"/>
+      <p2 x="640" y="380"/>
     </wire>
     <wire>
       <p1 x="-280" y="60"/>
       <p2 x="220" y="60"/>
     </wire>
     <wire>
+      <p1 x="580" y="220"/>
+      <p2 x="640" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="880" y="420"/>
+      <p2 x="880" y="460"/>
+    </wire>
+    <wire>
       <p1 x="20" y="340"/>
       <p2 x="20" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="200"/>
+      <p2 x="740" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="580" y="120"/>
+      <p2 x="580" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="580" y="220"/>
+      <p2 x="580" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="120"/>
+      <p2 x="420" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="340"/>
+      <p2 x="420" y="440"/>
     </wire>
     <wire>
       <p1 x="-40" y="20"/>
@@ -283,11 +441,35 @@
     </wire>
     <wire>
       <p1 x="360" y="20"/>
-      <p2 x="360" y="100"/>
+      <p2 x="360" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="160"/>
+      <p2 x="360" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="260"/>
+      <p2 x="360" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="300"/>
+      <p2 x="360" y="380"/>
     </wire>
     <wire>
       <p1 x="360" y="200"/>
-      <p2 x="360" y="300"/>
+      <p2 x="360" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="80"/>
+      <p2 x="360" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="100"/>
+      <p2 x="360" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="260"/>
+      <p2 x="600" y="480"/>
     </wire>
     <wire>
       <p1 x="220" y="60"/>
